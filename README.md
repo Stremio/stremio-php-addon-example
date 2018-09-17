@@ -2,7 +2,7 @@
 
 This example add-on uses files from [Stremio Static Add-on Example](https://github.com/Stremio/stremio-static-addon-example)
 
-*Important: Remote Stremio Add-ons only work through HTTPS*
+**Important: Remote Stremio Add-ons only work through HTTPS**
 
 
 What this example covers:
@@ -23,7 +23,7 @@ What this example does not cover:
 
 ## Configuring Apache Web Server's `.htaccess`
 
-*.htaccess* file contents:
+**.htaccess** file contents:
 
 ```
 RewriteEngine On
@@ -50,7 +50,7 @@ Note:
 
 ## Declaring the Add-on Manifest
 
-*manifest.php* file contents:
+**manifest.php** file contents:
 
 ```
 include 'helpers.php';
@@ -95,7 +95,7 @@ For the complete list of parameters that can be set in `manifest.json`, please s
 
 ## Reading from static JSON files
 
-*catalogs.php* file contents:
+**catalogs.php** file contents:
 
 ```
 include 'helpers.php';
