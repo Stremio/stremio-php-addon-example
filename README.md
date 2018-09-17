@@ -52,7 +52,8 @@ Note:
 
 **manifest.php** file contents:
 
-```
+```php
+<?php
 include 'helpers.php';
 
 // enable CORS and set JSON Content-Type
@@ -86,6 +87,7 @@ $manifest->catalogs = array($catalog);
 // print manifest in JSON format
 
 echo json_encode((array)$manifest);
+?>
 ```
 
 This will create an `stdClass` (PHP Object Class) with the required `manifest.json` parameters and respond with a JSON string based on the PHP object.
@@ -97,7 +99,8 @@ For the complete list of parameters that can be set in `manifest.json`, please s
 
 **catalogs.php** file contents:
 
-```
+```php
+<?php
 include 'helpers.php';
 
 // get request parameters
@@ -127,6 +130,7 @@ if (realpath($jsonPath)) {
 	page404();
 
 }
+?>
 ```
 
 `meta.php`, `catalogs.php` and `streams.php` all work with this same pattern, they simply read from a JSON file on disk and reply with it's contents in case it exists, otherwise it shows a 404 page.
