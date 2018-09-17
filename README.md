@@ -148,10 +148,11 @@ All requests expect a response in the JSON string format.
 
 Simply upload this example to an Apache Web Server with PHP support. If you add this example to a sub-folder instead of the main web server folder, make sure to make the required `.htaccess` changes as mentioned above.
 
-Then open Stremio, go to the add-ons page (puzzle icon button in the top right), and write your `manifest.json` url in the top right side input field (where it writes "Add-On Repository Url").
+Then open Stremio, go to the add-ons page (puzzle icon button in the top right), and write your `manifest.json` URL in the top right side input field (where it writes "Add-On Repository Url").
 
 Your `manifest.json` URL should be relative to the directory where you uploaded the example on your web server, for example it would be `https://www.mydomain.com/manifest.json` if you uploaded to your primary folder, or `https://www.mydomain.com/stremio-php-addon-example/manifest.json` if you uploaded to the `/stremio-php-addon-example/` folder.
 
-Visual example of where to add the `manifest.json` URL in Stremio:
+
+### Don't know where to add the Add-on Repository URL?
 
 ![add-on-repository-url](https://user-images.githubusercontent.com/1777923/43146711-65a33ccc-8f6a-11e8-978e-4c69640e63e3.png)
