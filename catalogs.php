@@ -2,12 +2,7 @@
 
 	include 'helpers.php';
 
-	// enable CORS and set JSON Content-Type
-
-	setHeaders();
-
 	// get request parameters
-
 	$catalog = getRequestParams();
 
 	// returns $catalog->type , $catalog->id and (if applicabale) $catalog->extra
@@ -31,7 +26,6 @@
 	} else {
 
 		// respond with 404 page
-
 		page404();
 
 	}

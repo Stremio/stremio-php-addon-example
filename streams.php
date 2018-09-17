@@ -3,7 +3,6 @@
 	include 'helpers.php';
 
 	// get request parameters
-
 	$streams = getRequestParams();
 
 	// returns $streams->type , $streams->id and (if applicabale) $streams->extra
@@ -19,17 +18,14 @@
 		// file exists
 
 		// enable CORS and set JSON Content-Type
-
 		setHeaders();
 
 		// respond with json file from file system
-
 		echo file_get_contents($jsonPath);
 
 	} else {
 
 		// respond with 404 page
-
 		page404();
 
 	}

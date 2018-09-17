@@ -100,12 +100,7 @@ For the complete list of parameters that can be set in `manifest.json`, please s
 ```
 include 'helpers.php';
 
-// enable CORS and set JSON Content-Type
-
-setHeaders();
-
 // get request parameters
-
 $catalog = getRequestParams();
 
 // returns $catalog->type , $catalog->id and (if applicabale) $catalog->extra
@@ -129,7 +124,6 @@ if (realpath($jsonPath)) {
 } else {
 
 	// respond with 404 page
-
 	page404();
 
 }

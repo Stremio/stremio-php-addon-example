@@ -3,7 +3,6 @@
 	include 'helpers.php';
 
 	// get request parameters
-
 	$meta = getRequestParams();
 
 	// returns $meta->type , $meta->id and (if applicabale) $meta->extra
@@ -19,17 +18,14 @@
 		// file exists
 
 		// enable CORS and set JSON Content-Type
-
 		setHeaders();
 
 		// respond with json file from file system
-
 		echo file_get_contents($jsonPath);
 
 	} else {
 
 		// respond with 404 page
-
 		page404();
 
 	}
