@@ -6,9 +6,7 @@ RewriteRule ^manifest.json manifest.php
 RewriteRule ^catalog/(.*)/(.*)/(.*).json catalogs.php?type=$1&id=$2&extra=$3 [B]
 RewriteRule ^meta/(.*)/(.*)/(.*).json meta.php?type=$1&id=$2&extra=$3 [B]
 RewriteRule ^stream/(.*)/(.*)/(.*).json streams.php?type=$1&id=$2&extra=$3 [B]
-RewriteRule ^subtitles/(.*)/(.*)/(.*).json subtitles.php?type=$1&id=$2&extra=$3 [B]
 
 RewriteRule ^catalog/(.*)/(.*).json catalogs.php?type=$1&id=$2
 RewriteRule ^meta/(.*)/(.*).json meta.php?type=$1&id=$2
 RewriteRule ^stream/(.*)/(.*).json streams.php?type=$1&id=$2
-RewriteRule ^subtitles/(.*)/(.*).json subtitles.php?type=$1&id=$2
