@@ -20,7 +20,7 @@
 
 		$requestArgs->id = $_GET["id"];
 
-		if ($_GET["extra"]) {
+		if (isset($_GET["extra"])) {
 			parse_str($_GET["extra"], $requestArgs->extra);
 			$requestArgs->extra = (object) $requestArgs->extra;
 		}
