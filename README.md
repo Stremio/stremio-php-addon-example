@@ -31,9 +31,9 @@ RewriteBase /
 
 RewriteRule ^manifest.json manifest.php
 
-RewriteRule ^catalog/(.*)/(.*)/(.*).json catalogs.php?type=$1&id=$2&extra=$3
-RewriteRule ^meta/(.*)/(.*)/(.*).json meta.php?type=$1&id=$2&extra=$3
-RewriteRule ^stream/(.*)/(.*)/(.*).json streams.php?type=$1&id=$2&extra=$3
+RewriteRule ^catalog/(.*)/(.*)/(.*).json catalogs.php?type=$1&id=$2&extra=$3 [B]
+RewriteRule ^meta/(.*)/(.*)/(.*).json meta.php?type=$1&id=$2&extra=$3 [B]
+RewriteRule ^stream/(.*)/(.*)/(.*).json streams.php?type=$1&id=$2&extra=$3 [B]
 
 RewriteRule ^catalog/(.*)/(.*).json catalogs.php?type=$1&id=$2
 RewriteRule ^meta/(.*)/(.*).json meta.php?type=$1&id=$2
