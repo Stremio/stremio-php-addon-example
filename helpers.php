@@ -21,7 +21,8 @@
 		$requestArgs->id = $_GET["id"];
 
 		if ($_GET["extra"]) {
-			$requestArgs->extra = json_decode($_GET["extra"]);
+			parse_str($_GET["extra"], $requestArgs->extra);
+			$requestArgs->extra = (object) $requestArgs->extra;
 		}
 
 		return $requestArgs;
